@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "Resume",
+  "module": "Resume Parser",
+  "custom": 0,
+  "fields": [
+    {
+      "fieldname": "resume_file",
+      "label": "Resume File",
+      "fieldtype": "Attach",
+      "reqd": 1
+    },
+    {
+      "fieldname": "skills",
+      "label": "Skills",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "score",
+      "label": "Score",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Pending\nProcessing\nProcessed\nFailed",
+      "default": "Pending"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
